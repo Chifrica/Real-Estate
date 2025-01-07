@@ -4,9 +4,9 @@ import React from 'react'
 const Explore = () => {
   return (
     <View>
-      <Text>explore</Text>
+      <Text>Explore</Text>
     </View>
   )
 }
 
-export default Explore;
+export default Explore

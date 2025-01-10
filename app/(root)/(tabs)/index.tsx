@@ -4,6 +4,7 @@ import { SafeAreaView } from "react-native-safe-area-context";
 import images from "@/constants/images";
 import icons from "@/constants/icons";
 import Search from "@/components/Search";
+import { Card, FeaturedCards } from "@/components/Cards";
 
 export default function Index() {
   return (
@@ -19,17 +20,21 @@ export default function Index() {
           </View>
           <Image source={icons.bell} className="size-6" />
         </View>
-      </View>
 
-      <Search />
+        <Search />
 
-      <View className="my-5 ">
-        <View className="flex flex-row items-center justify-between px-5">
-          <Text className="text-xl font-rubik-bold text-black-300">Featured</Text>
-          <TouchableOpacity>
-            <Text className="text-base font-rubik-bold text-primary-300">See All</Text>
-          </TouchableOpacity> 
+        <View className="my-5 ">
+          <View className="flex flex-row items-center justify-between px-5">
+            <Text className="text-xl font-rubik-bold text-black-300">Featured</Text>
+            <TouchableOpacity>
+              <Text className="text-base font-rubik-bold text-primary-300">See All</Text>
+            </TouchableOpacity> 
+          </View>
         </View>
+
+        <FeaturedCards />
+
+        <Card />
       </View>
     </SafeAreaView>
   );

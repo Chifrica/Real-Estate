@@ -7,7 +7,7 @@ export const config = {
     endpoint:  process.env.EXPO_PUBLIC_APPWRITE_ENDPOINT,
     projectId: process.env.EXPO_PUBLIC_APPWRITE_PROJECT_ID,
     databaseId: process.env.EXPO_PUBLIC_APPWRITE_DATABASE_ID,
-    galleryCollectionId: process.env.EXPO_PUBLIC_APPWRITE_GALLERY_COLLECTION,
+    galleriesCollectionId: process.env.EXPO_PUBLIC_APPWRITE_GALLERY_COLLECTION,
     reviewsCollectionId: process.env.EXPO_PUBLIC_APPWRITE_REVIEWS_COLLECTION,
     agentsCollectionId: process.env.EXPO_PUBLIC_APPWRITE_AGENTS_COLLECTION,
     propertiesCollectionId: process.env.EXPO_PUBLIC_APPWRITE_PROPERTIES_COLLECTION,

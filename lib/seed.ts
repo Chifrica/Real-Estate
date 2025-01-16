@@ -10,7 +10,7 @@ import {
 const COLLECTIONS = {
   AGENT: config.agentsCollectionId,
   REVIEWS: config.reviewsCollectionId,
-  GALLERY: config.galleryCollectionId,
+  GALLERY: config.galleriesCollectionId,
   PROPERTY: config.propertiesCollectionId,
 };
 

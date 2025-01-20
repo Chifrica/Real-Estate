@@ -127,10 +127,20 @@ export async function getPropeties({ filter, query, limit} : {
                 Query.or([
                     Query.search('name', query),
                     Query.search('address', query),
-                    Query.search('type', query);
+                    Query.search('type', query)
                 ])
             )
         }
+
+        if (limit) {
+            buildQuery.push(Query.limit(limit)); 
+        }
+
+        const result = await databases.listDocuments(
+            config.databaseId!,
+            config.propertiesCollectionId!,
+            buildQuery
+        )
     } catch (error) {
         console.error(error);
         return[]
